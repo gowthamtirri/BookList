@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+    />
+    <style>
+      .sucess,
+      .error,
+      .remove {
+        letter-spacing: 2px;
+        width: 50%;
+        color: white;
+        padding: 5px;
+        margin: 5px 0px 15px 0px;
+        text-align: center;
+      }
+
+      .sucess {
+        background-color: rgb(62, 201, 97);
+      }
+      .error {
+        background-color: rgb(238, 44, 44);
+      }
+      .remove {
+        background-color: rgb(232, 206, 39);
+      }
+      table {
+        border-collapse: collapse;
+      }
+      thead{
+        padding:10px 20px;
+      }
+      button{
+        width: 200px;
+        background-color: rgb(58, 182, 120);
+        color: white;
+      }
+    </style>
+    <title>Book List</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Add Book</h1>
+      <form id="book-form">
+        <div>
+          <label for="title">Title</label>
+          <input type="text" class="u-full-width" id="title" />
+        </div>
+        <div>
+          <label for="author">Author</label>
+          <input type="text" class="u-full-width" id="author" />
+        </div>
+        <div>
+          <label for="isbn">ISBN</label>
+          <input type="text" class="u-full-width" id="isbn" />
+        </div>
+        <button type="submit"class="u-full-width" >Add</button>
+      </form>
+      <table class="u-full-width">
+        <thead style="background-color: #2f2f81;color:white;">
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+    <footer  style="width: 80%;margin:auto;text-align:center;">
+      <p>Built with ❤️ by Gowtham Tirri</p>
+    </footer>
+
+    <script src="es6.js"></script>
+  </body>
+</html>
